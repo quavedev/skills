@@ -33,6 +33,9 @@ npx skills add quavedev/skills --list
 | --- | --- |
 | [`meteor`](./meteor/SKILL.md) | Meteor 3 architecture — async-only server (`*Async` + `await`), client/server boundaries, collections via `quave:collections`, methods, publications/subscriptions, ESM modules. |
 | [`meteor-frontend`](./meteor-frontend/SKILL.md) | React 19 + React Compiler, Tailwind v4 CSS-first theming, feature folders, routing/layouts, reactive Minimongo data, alerts, mandatory responsive design. |
+| [`meteor-controlled-reload`](./meteor-controlled-reload/SKILL.md) | Stop hot code push from refreshing every client on deploy — semver-gated reloads (major = force, minor = ask, patch = silent) with version bump scripts. |
+| [`quave-migrations`](./quave-migrations/SKILL.md) | One-time database migrations with `quave:migrations` — sequential numbered files, logging/error template, auto-run on startup, safe deploy practices. |
+| [`pr-screenshots-videos`](./pr-screenshots-videos/SKILL.md) | Capture UI screenshots and videos with `agent-browser` and attach them to PRs via the `gh-image` extension — visual evidence for every UI change. |
 | [`quave-coding-style`](./quave-coding-style/SKILL.md) | House coding rules — JS-only functional style, named params, feature folders, method shape (auth → validate → authorize → work), permission patterns, safety rules. |
 | [`quave-enums`](./quave-enums/SKILL.md) | Enums with `@quave/enum` `createEnum` — never loose strings, schema `allowedValues` driven from the enum, boolean flags over string chains. |
 | [`git-workflow`](./git-workflow/SKILL.md) | Safe git rules for agents — no force push, rebase, squash, or hard reset; PR-based flow; commit-message format. |
