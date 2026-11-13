@@ -67,10 +67,9 @@ checked, with counts (commits, files, branches), and each real finding with `fil
 fix. Name the commit author identity that will become public. Don't print the denylist terms or
 secrets in full; refer to them ("your work email", "a GitHub token on line 12").
 
-If something leaked into a commit that isn't pushed yet, offer to fix it without a rebase
-(see the `git-workflow` skill): `git commit --amend` when it is the last commit, or
-`git reset --soft` to the commit before the leak and commit again. If it is already pushed, say the secret must be rotated, since rewriting history
-does not un-publish it.
+If anything is not safe to publish, stop and ask the user how to proceed. Never suggest
+rewriting commits (no amend, rebase or reset): the user decides. If a secret is already pushed,
+say it must be rotated, since rewriting history does not un-publish it.
 
 ## 5. Offer the guard
 
