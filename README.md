@@ -40,6 +40,10 @@ npx skills add quavedev/skills --list
 | [`quave-coding-style`](./quave-coding-style/SKILL.md) | House coding rules — JS-only functional style, named params, feature folders, method shape (auth → validate → authorize → work), permission patterns, safety rules. |
 | [`quave-enums`](./quave-enums/SKILL.md) | Enums with `@quave/enum` `createEnum` — never loose strings, schema `allowedValues` driven from the enum, boolean flags over string chains. |
 | [`git-workflow`](./git-workflow/SKILL.md) | Safe git rules for agents — no force push, rebase, squash, or hard reset; PR-based flow; commit-message format. |
+| [`create-issue`](./create-issue/SKILL.md) | Write a GitHub issue for the developer who implements it — context, scope, acceptance criteria, and where to change (files, code to reuse, tests); variants for bugs, vague features, and findings. |
+| [`implement-issue`](./implement-issue/SKILL.md) | Take an issue to a reviewed PR — execution checklist in the issue body with proof per item, failing test first for bugs, PR via `create-pr`, then a review by a separate agent with `review-pr`. |
+| [`create-pr`](./create-pr/SKILL.md) | Run the project's checks, then open a PR with a Summary, an Agent test plan (already run and checked), and a Test plan (product steps for a person). |
+| [`review-pr`](./review-pr/SKILL.md) | Review a PR, branch, or diff against its context — real issues, gaps, pattern drift, code that could be smaller, security, and performance; ends with `Ready to merge: yes/no`. |
 | [`quality-gate`](./quality-gate/SKILL.md) | Final gate before declaring work done — `meteor npm run quave-check` / `quave-check-ci` (Oxlint + Oxfmt) and how to handle findings. |
 | [`agent-file-convention`](./agent-file-convention/SKILL.md) | How AI instruction files are organized — `AGENTS.md`, `CLAUDE.md`, `internal-docs/ai/*.md`, `COLLECTIONS.md`. |
 
