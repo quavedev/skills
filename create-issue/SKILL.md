@@ -43,6 +43,8 @@ Title: short and specific. Body:
 
 **Finding** from other work (the `no-broken-windows` skill): open with `Found while working on #N. Group: **<group>**.`, put the evidence in it, and keep it as small as the fix.
 
+**Sub-issue** (one piece of a parent issue that lands on its own): title `part of #<parent> - <title>`, e.g. `part of #42 - Reset link on the login page`. The title says what this piece does; the parent number is the only link.
+
 ## Create
 
 ```bash

@@ -24,6 +24,7 @@ Append it, keeping the original text. Reuse an existing one; refine it only when
 - [ ] (TODO) (CODE) <specific behavior>. Proof: <file or check>.
 - [ ] (TODO) (TEST) Tests for <behavior>, or (SKIP) Reason: <why>.
 - [ ] (TODO) (VERIFY) Checks from `AGENTS.md`.
+- [ ] (TODO) (QA) Browser test with `qa`. Proof: the last line of the report, or (SKIP) Reason: <why>.
 - [ ] (TODO) (PR) Open the PR.
 - [ ] (TODO) (REVIEW) Review gate. Proof: the review's last line.
 ```
@@ -40,11 +41,22 @@ Item by item: mark it `(IN PROGRESS)`, do it, put the proof on the line, mark it
 - **For a bug, write a failing test that reproduces it first**, then fix it at the root.
 - Commit as you go, one logical change per commit. Before each commit, run the checks `AGENTS.md` asks for (in Quave apps, the `quality-gate` skill).
 
-## 4. PR
+## 4. Browser test
+
+Test the change as a user before the PR exists. Run the `qa` skill on the issue's acceptance criteria and the steps the diff could have broken nearby.
+
+- **Surface:** a web app runs in the browser (`qa/references/web.md`, plus `ui-states.md` for layout changes). A mobile app uses `mobile.md`. Get the run command and URL from `AGENTS.md`.
+- **App will not run:** mark `(BLOCKED)` with the reason. Do not skip it silently.
+- **No user-facing change:** `(SKIP) Reason: no user-facing change.`
+- **Failures:** a failure in scope is fixed as a new commit, and the failed tests run again. A failure out of scope is filed (`no-broken-windows` skill). This overrides the "wait for approval" step in `qa`: running this skill is the request to fix this issue's commits.
+- **Proof:** the report table, and the `QA passed` or `QA failed` line on the `(QA)` item. The PR does not open until QA passed or was skipped.
+- Tick the PR's Test plan steps this run actually covered (`create-pr`).
+
+## 5. PR
 
 Run the checks and report the real output. Then open the PR with `create-pr`, with `Closes #N`, and put its URL on the `(PR)` line.
 
-## 5. Review gate
+## 6. Review gate
 
 The PR is not ready until an agent that did not write it has read it.
 
