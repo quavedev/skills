@@ -41,6 +41,7 @@ npx skills add quavedev/skills --list
 | [`quave-enums`](./quave-enums/SKILL.md) | Enums with `@quave/enum` `createEnum` — never loose strings, schema `allowedValues` driven from the enum, boolean flags over string chains. |
 | [`git-workflow`](./git-workflow/SKILL.md) | Safe git rules for agents — no force push, rebase, squash, or hard reset; PR-based flow; commit-message format. |
 | [`quality-gate`](./quality-gate/SKILL.md) | Final gate before declaring work done — `meteor npm run quave-check` / `quave-check-ci` (Oxlint + Oxfmt) and how to handle findings. |
+| [`publish-safety-check`](./publish-safety-check/SKILL.md) | Scan commits or staged changes for secrets, machine details (home paths, hostnames, local IPs), and personal data before pushing or making a repo public; can install a pre-commit/pre-push guard. |
 | [`agent-file-convention`](./agent-file-convention/SKILL.md) | How AI instruction files are organized — `AGENTS.md`, `CLAUDE.md`, `internal-docs/ai/*.md`, `COLLECTIONS.md`. |
 
 ## Source of truth
