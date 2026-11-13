@@ -42,6 +42,9 @@ npx skills add quavedev/skills --list
 | [`git-workflow`](./git-workflow/SKILL.md) | Safe git rules for agents — no force push, rebase, squash, or hard reset; PR-based flow; commit-message format. |
 | [`quality-gate`](./quality-gate/SKILL.md) | Final gate before declaring work done — `meteor npm run quave-check` / `quave-check-ci` (Oxlint + Oxfmt) and how to handle findings. |
 | [`agent-file-convention`](./agent-file-convention/SKILL.md) | How AI instruction files are organized — `AGENTS.md`, `CLAUDE.md`, `internal-docs/ai/*.md`, `COLLECTIONS.md`. |
+| [`lean-code`](./lean-code/SKILL.md) | Smallest complete change — skip what nobody asked for, reuse what exists, delete before adding; lists what never to cut. |
+| [`no-broken-windows`](./no-broken-windows/SKILL.md) | Every flaw found while working ends fixed, filed, or dismissed — never a TODO; defines the Issue / Gap / Pattern drift / Lean finding groups. |
+| [`docs-upkeep`](./docs-upkeep/SKILL.md) | When work proves an instruction wrong, verify it and fix it in the one file that owns it. |
 
 ## Source of truth
 
