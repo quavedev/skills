@@ -34,6 +34,7 @@ Closes #N
 
 - **Agent test plan:** commands or checks an agent can run. Run every one before opening and check it. Never leave them for the reviewer.
 - **Test plan:** steps in the product, no shell commands. Unchecked until someone runs them. If a step ran under different conditions (emulator, other data), say so on the line. No UI: `- [ ] N/A: no user-facing change.`
+- **UI changes:** attach at least one screenshot, and a video for interactive flows, with the `pr-screenshots-videos` skill.
 - `Closes #N` only when the PR fully completes the issue.
 
 ## Create

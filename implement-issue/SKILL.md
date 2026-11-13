@@ -38,7 +38,7 @@ Item by item: mark it `(IN PROGRESS)`, do it, put the proof on the line, mark it
 
 - Before each code item, read the files it touches and copy their patterns.
 - **For a bug, write a failing test that reproduces it first**, then fix it at the root.
-- Commit as you go, one logical change per commit.
+- Commit as you go, one logical change per commit. Before each commit, run the checks `AGENTS.md` asks for (in Quave apps, the `quality-gate` skill).
 
 ## 4. PR
 
