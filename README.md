@@ -37,6 +37,7 @@ npx skills add quavedev/skills --list
 | [`meteor-2-to-3-migration`](./meteor-2-to-3-migration/SKILL.md) | Incremental Meteor 2 → 3 async migration — eslint-plugin baseline, methods/pubs first under regression tests, dual-pattern split for shared code, cutover last. |
 | [`quave-migrations`](./quave-migrations/SKILL.md) | One-time database migrations with `quave:migrations` — sequential numbered files, logging/error template, auto-run on startup, safe deploy practices. |
 | [`pr-screenshots-videos`](./pr-screenshots-videos/SKILL.md) | Capture UI screenshots and videos with `agent-browser` and attach them to PRs via the `gh-image` extension — visual evidence for every UI change. |
+| [`qa`](./qa/SKILL.md) | Test a change as a user — a test plan, a screenshot per test and a pass/fail table; references for web, UI states across screen sizes, and mobile (iOS/Android via `agent-device`). |
 | [`quave-coding-style`](./quave-coding-style/SKILL.md) | House coding rules — JS-only functional style, named params, feature folders, method shape (auth → validate → authorize → work), permission patterns, safety rules. |
 | [`quave-enums`](./quave-enums/SKILL.md) | Enums with `@quave/enum` `createEnum` — never loose strings, schema `allowedValues` driven from the enum, boolean flags over string chains. |
 | [`git-workflow`](./git-workflow/SKILL.md) | Safe git rules for agents — no force push, rebase, squash, or hard reset; PR-based flow; commit-message format. |
