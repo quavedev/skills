@@ -46,6 +46,7 @@ npx skills add quavedev/skills --list
 | [`create-pr`](./create-pr/SKILL.md) | Run the project's checks, then open a PR with a Summary, an Agent test plan (already run and checked), and a Test plan (product steps for a person). |
 | [`review-pr`](./review-pr/SKILL.md) | Review a PR, branch, or diff against its context — real issues, gaps, pattern drift, code that could be smaller, security, and performance; ends with `Ready to merge: yes/no`. |
 | [`quality-gate`](./quality-gate/SKILL.md) | Final gate before declaring work done — `meteor npm run quave-check` / `quave-check-ci` (Oxlint + Oxfmt) and how to handle findings. |
+| [`publish-safety-check`](./publish-safety-check/SKILL.md) | Scan commits or staged changes for secrets, machine details (home paths, hostnames, local IPs), and personal data before pushing or making a repo public; can install a pre-commit/pre-push guard. |
 | [`agent-file-convention`](./agent-file-convention/SKILL.md) | How AI instruction files are organized — `AGENTS.md`, `CLAUDE.md`, `internal-docs/ai/*.md`, `COLLECTIONS.md`. |
 | [`lean-code`](./lean-code/SKILL.md) | Smallest complete change — skip what nobody asked for, reuse what exists, delete before adding; lists what never to cut. |
 | [`no-broken-windows`](./no-broken-windows/SKILL.md) | Every flaw found while working ends fixed, filed, or dismissed — never a TODO; defines the Issue / Gap / Pattern drift / Lean finding groups. |
